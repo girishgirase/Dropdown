@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navigation bar fo Dropdown menu -->
+    <nav>
+        <div class="menuToggle"></div>
+        <div class="profile">
+            <h3>Girish Girase<br><span>Developer</span></h3>
+            <div class="imgBx">
+                <img src="GR.png">
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <ion-icon name="person-outline"></ion-icon>Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="chatbubble-outline"></ion-icon>Inbox
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="settings-outline"></ion-icon>Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="help-circle-outline"></ion-icon>Help
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="log-out-outline"></ion-icon>Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Javascript starts from here -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let profile = document.querySelector('.profile');
+        let menu = document.querySelector('.menu');
+        profile.onclick = function() {
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
